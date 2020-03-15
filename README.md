@@ -7,3 +7,18 @@ To deploy Docker Registry on OpenShift:
 ```
 $ oc apply --kustomize docker-registry/base
 ```
+
+Obtain the registry host name:
+
+```
+$ oc get route docker-registry \
+    --namespace docker-registry \
+    --output go-template \
+    --template '{{.spec.host}}'
+```
+
+Log in into registry with credentials `registry/password`:
+
+```
+$ podman login <your_registry_host_name>
+```
