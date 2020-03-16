@@ -4,7 +4,7 @@ version: 0.1
 log:
   accesslog:
     disabled: false
-  formatter: text
+  formatter: json
   level: info
 auth:
   htpasswd:
