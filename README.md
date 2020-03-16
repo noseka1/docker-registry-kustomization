@@ -17,7 +17,7 @@ $ oc get route docker-registry \
     --template '{{.spec.host}}'
 ```
 
-Log in into registry with credentials `registry/password`:
+Log in into registry with username `registry` and password `9a5866dc0e500eea9b4f23bd99766053`:
 
 ```
 $ podman login <your_registry_host_name>
