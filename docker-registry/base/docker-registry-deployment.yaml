@@ -17,7 +17,7 @@ spec:
       - name: docker-registry
         image: docker.io/library/registry:2.7.1
         ports:
-        - name: http
+        - name: https
           containerPort: 5000
           protocol: TCP
         volumeMounts:
